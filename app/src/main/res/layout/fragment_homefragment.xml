@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.Homefragment"
+    android:orientation="vertical"
+    android:background="#050A27">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#CE1B1C27"
+        android:id="@+id/toolbar">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MOVIE STACK"
+            android:textColor="#fff"
+            android:textSize="18sp">
+
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:sliderAnimationDuration="600"
+                    app:sliderScrollTimeInSec="1"
+                    app:sliderIndicatorEnabled="false"
+                    app:sliderStartAutoCycle="true"
+                    android:id="@+id/slider">
+
+                </com.smarteist.autoimageslider.SliderView>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trending "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Person "
+            android:layout_marginLeft="100dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#8F8E8E"
+            android:layout_marginTop="5dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/more1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More "
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#D31E1E"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/recycle">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trending "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movies "
+            android:layout_marginLeft="100dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#8F8E8E"
+            android:layout_marginTop="5dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/more2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More "
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#D31E1E"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/recycle1">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trending "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tv Show "
+            android:layout_marginLeft="100dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#8F8E8E"
+            android:layout_marginTop="5dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/more3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More "
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#D31E1E"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/recycle2">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movies "
+            android:layout_marginLeft="100dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#8F8E8E"
+            android:layout_marginTop="5dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More "
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#D31E1E"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/recycle3">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tv Show "
+            android:layout_marginLeft="100dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#8F8E8E"
+            android:layout_marginTop="5dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More "
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#D31E1E"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/recycle4">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

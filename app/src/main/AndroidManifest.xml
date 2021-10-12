@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apk.movie1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Movie1">
+        <activity android:name=".MoreoneActivity"></activity>
+        <activity android:name=".MorethreeActivity" />
+        <activity android:name=".MoretwoActivity" />
+        <activity android:name=".DiscoveryActivity" />
+        <activity android:name=".ImageActivity" />
+        <activity android:name=".SearchpersononeActivity" />
+        <activity android:name=".SearchtvshowoneActivity" />
+        <activity android:name=".SearchmovieoneActivity" />
+        <activity android:name=".TrendingpersonActivity" />
+        <activity android:name=".PopulartvshowActivity" />
+        <activity android:name=".PopularmovieActivity" />
+        <activity android:name=".TrendingtvshowActivity" />
+        <activity android:name=".TrendingmovieActivity" />
+        <activity android:name=".SearchpersonActivity" />
+        <activity android:name=".SearchtvshowActivity" />
+        <activity android:name=".SearchMovieActivity" />
+        <activity android:name=".MenuAppinfoActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

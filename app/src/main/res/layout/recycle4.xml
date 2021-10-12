@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/splase"
+            android:scaleType="centerCrop"
+            android:layout_margin="10dp"
+            android:id="@+id/img">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="120dp">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ankit"
+                android:textSize="20dp"
+                android:textColor="#fff">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ankit"
+                android:textSize="15dp"
+                android:textColor="#8A8787">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

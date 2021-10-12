@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiscoveryActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#000">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search......."
+                android:backgroundTint="#000"
+                android:textColorHint="#838181"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                />
+
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_marginTop="5dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/search"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab"
+        android:background="#000">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pager">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
