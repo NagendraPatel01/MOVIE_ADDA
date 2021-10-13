@@ -58,6 +58,11 @@ public class Homefragment extends Fragment {
     RequestQueue queue;
     StringRequest request;
     List<Trendingpersonmodel> list;
+
+   /* String url = "https://api.themoviedb.org/3/trending/person/day";
+    RequestQueue queue;
+    StringRequest request;
+    List<Trendingpersonmodel> list;*/
    
 
 
