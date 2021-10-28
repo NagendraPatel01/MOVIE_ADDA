@@ -1,5 +1,6 @@
 package com.apk.movie1.homeadapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -39,7 +40,7 @@ public class Hometrendingtvshowadapter extends RecyclerView.Adapter<Hometrending
 
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.text.setText(list2.get(position).getName());
          //https://image.tmdb.org/t/p/w500
         //https://image.tmdb.org/t/p/w185

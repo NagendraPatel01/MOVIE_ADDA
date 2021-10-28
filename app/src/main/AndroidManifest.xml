@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.apk.movie1">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Movie1">
-        <activity android:name=".MoreoneActivity"></activity>
+        <activity
+            android:name=".TrendingpersonMovieActivity"
+            android:exported="false" />
+        <activity android:name=".MoreoneActivity" />
         <activity android:name=".MorethreeActivity" />
         <activity android:name=".MoretwoActivity" />
         <activity android:name=".DiscoveryActivity" />
@@ -35,7 +40,5 @@
         </activity>
         <activity android:name=".MainActivity" />
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

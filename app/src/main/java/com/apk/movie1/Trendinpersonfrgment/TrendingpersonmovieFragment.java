@@ -75,6 +75,8 @@ public class TrendingpersonmovieFragment extends Fragment {
 
                             trendingpersonmoviemodel.setTitle(jsonObject1.getString("title"));
 
+                            trendingpersonmoviemodel.setId(jsonObject1.getString("id"));
+
                             Log.d(TAG, "onResponse12: "+jsonObject1.getString("title"));
 
                         if (jsonObject1.has("backdrop_path") && !jsonObject1.isNull("backdrop_path")) {

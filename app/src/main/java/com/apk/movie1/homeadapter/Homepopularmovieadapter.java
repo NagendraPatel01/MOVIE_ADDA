@@ -1,5 +1,6 @@
 package com.apk.movie1.homeadapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -40,7 +41,7 @@ public class Homepopularmovieadapter extends RecyclerView.Adapter<Homepopularmov
 
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
          holder.text.setText(list3.get(position).getTitle());
 
         Glide.with(context).load("https://image.tmdb.org/t/p/w500"+list3.get(position).getPoster_path()).into(holder.img);

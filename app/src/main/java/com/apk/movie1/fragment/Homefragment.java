@@ -166,6 +166,7 @@ public class Homefragment extends Fragment {
                         if (jsonObject1.has("name") && !jsonObject1.isNull("name")) {
                             trendingpersonmodel.setName(jsonObject1.getString("name"));
                             trendingpersonmodel.setId(jsonObject1.getString("id"));
+                            Log.d(TAG, "sertyujfdsdfghjkjhgfd"+trendingpersonmodel.getId());
                         }
 
                         if (jsonObject1.has("profile_path") &&  !jsonObject1.isNull("profile_path")){
@@ -235,12 +236,14 @@ public class Homefragment extends Fragment {
 
                      if (jsonObject1.has("poster_path") && !jsonObject1.isNull("poster_path")) {
                          trendingmoviemodel.setPoster_path(jsonObject1.getString("poster_path"));
+                         Log.d(TAG, "rtyufgh: "+trendingmoviemodel.getPoster_path());
                      }
 
                      if (jsonObject1.has("title") && !jsonObject1.isNull("title")) {
                          trendingmoviemodel.setTitle(jsonObject1.getString("title"));
                      }
                      trendingmoviemodel.setId(jsonObject1.getString("id"));
+                     Log.d(TAG, "fghjh: "+trendingmoviemodel.getId());
                      list1.add(trendingmoviemodel);
 
 

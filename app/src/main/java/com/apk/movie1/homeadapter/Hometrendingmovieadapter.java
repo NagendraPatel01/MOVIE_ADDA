@@ -1,5 +1,6 @@
 package com.apk.movie1.homeadapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
@@ -39,7 +40,7 @@ public class Hometrendingmovieadapter extends RecyclerView.Adapter<Hometrendingm
     }
 
     @Override
-    public void onBindViewHolder(@NonNull HometrendinViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull HometrendinViewHolder holder, @SuppressLint("RecyclerView") int position) {
 
 
         holder.text.setText(list1.get(position).getTitle());
@@ -55,6 +56,7 @@ public class Hometrendingmovieadapter extends RecyclerView.Adapter<Hometrendingm
 
                 Intent intent=new Intent(context, TrendingmovieActivity.class);
                 intent.putExtra("persion_id",list1.get(position).getId());
+                Log.d("dfrtgyhu", "rtyuikytrtyhj: "+list1.get(position).getId());
 
 
                 context.startActivity(intent);

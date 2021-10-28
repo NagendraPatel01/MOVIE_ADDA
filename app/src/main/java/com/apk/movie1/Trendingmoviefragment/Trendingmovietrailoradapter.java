@@ -1,5 +1,6 @@
 package com.apk.movie1.Trendingmoviefragment;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -39,7 +40,7 @@ public class Trendingmovietrailoradapter extends RecyclerView.Adapter<Trendingmo
 
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

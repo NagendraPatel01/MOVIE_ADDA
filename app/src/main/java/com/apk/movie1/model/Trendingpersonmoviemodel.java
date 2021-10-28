@@ -6,7 +6,27 @@ public class Trendingpersonmoviemodel {
     String vote_average;
     String release_date;
     String backdrop_path;
+    String id;
 
+
+    @Override
+    public String toString() {
+        return "Trendingpersonmoviemodel{" +
+                "title='" + title + '\'' +
+                ", vote_average='" + vote_average + '\'' +
+                ", release_date='" + release_date + '\'' +
+                ", backdrop_path='" + backdrop_path + '\'' +
+                ", id='" + id + '\'' +
+                '}';
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return title;

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.apk.movie1.Adapter.Popularmovieadapter;
 import com.google.android.material.tabs.TabLayout;
@@ -20,6 +21,8 @@ public class PopularmovieActivity extends AppCompatActivity {
         setContentView(R.layout.activity_popularmovie);
 
         persion_id=getIntent().getStringExtra("persion_id");
+
+        Log.d("cfghnjmvg", "dfrtghjkjgfdfg"+persion_id);
         tabLayout=findViewById(R.id.tablayout);
         pager=findViewById(R.id.pager);
 

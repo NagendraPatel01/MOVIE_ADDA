@@ -1,7 +1,9 @@
 package com.apk.movie1.homeadapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +33,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
 
     @NonNull
     @Override
+    
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view =inflater.inflate(R.layout.recycle1,parent,false);
@@ -38,7 +41,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
 
         holder.text.setText(list.get(position).getName());
 
@@ -51,6 +54,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
                 Intent intent=new Intent(context, TrendingpersonActivity.class);
                 intent.putExtra("person_id",list.get(position).getId());
 
+                Log.d("dfghjklxcvbnm,", "ertyuikmxcvbnmhgfd"+list.get(position).getId());
 
                 context.startActivity(intent);
             }
